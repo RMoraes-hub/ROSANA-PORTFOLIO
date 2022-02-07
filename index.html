@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>ROSANA MORAES  - 2022 PORTFOLIO</title>
+   <head>
+     <!-- initial code idea from https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_grid-template3-->-->
+      <style>
+
+      .header { grid-area: header; }
+      .main-1{ grid-area: main-1; }
+      .main-2 { grid-area: main-2; }
+      .main-3 { grid-area: main-3; }
+      .footer { grid-area: footer; }
+      
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:minmax(200 px , auto);
+        grid-template:
+          'header header header'
+          'main-1 main-2 main-3'
+          'footer footer footer';
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+      }
+      
+      .grid-container > div {
+        background-color: rgba(227, 238, 154, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+      </style>
+</head>
+<body>
+  <h1>ROSANA's PORTFOLIO</h1>
+
+   <div class="grid-container">
+      <div class="header"> 
+        <h2>Software Developer To Be</h2>
+                      <hr>
+                      <img src="Images/Rosana.jpg" alt="Rosana's profile image" srcset=""width="200" height="100">
+        <h3> About Me</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas modi numquam iusto labore ex neque illum aspernatur dolorem, recusandae aut vitae eaque dolorum ullam. Officiis numquam provident iste eveniet quisquam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas modi numquam iusto labore ex neque illum aspernatur dolorem, recusandae aut vitae eaque dolorum ullam. Officiis numquam provident iste eveniet quisquam!</p>
+        <p>Here is an overview of my <em>Portfolio</em>  over the last three years </p>
+<ol style="text-align: center"> 
+ <li>WICook at Home Facebook Group </li>
+ <li>WICook at Home Cooking Challenges</li>
+ <li>Health Talks</li>
+ </ol>
+       
+      </div>
+     
+      <div class="main-1"> 
+        <h5>WICook at Home Facebook Group </h5>
+        <p>Launched in 8/2020. It is a place for partcipants to learn more about community resources and healthy eating on a budget. A place for exhanging recipe ideas </p><p>
+        </p> Click the picture below to join and learn more</p>
+      <a href="https://www.facebook.com/groups/WICookAtHome">  <img src="Images/wicook-at-home-fb-group.PNG" alt = "WICook at Home FB Group" width= " 500 px" height= "300 px"> </a>
+       
+      </div>  
+      <div class="main-2"> 
+        <h5>WICook at Home Cooking Challenge</h5>
+        <p>Clients are given a choice of three different themes each month. Memebrs vote and the most popular theme becomes the monthly cooking Challenge</p>
+        <img src="Images/3-theme-choices.PNG" alt="Poll with three cooking challenge 3-theme-choices" width= "300 px" height= "200 px" >
+        <br>
+       <img src="Images/Dec-Cooking-Challenge-2021.PNG" alt="Sample Cooking Challenge Announcement" width= "300 px" height= "200 px" >
+       </div>
+
+      <div class="main-3"> 
+        <H3>Health Talks with Pediatric Porfessionals</H3>
+        <p>Monthly sessions with pediatircioan and Health Educators are offered.  Sessions are advertised on the City of Houston WIC website and FB pages</p>
+
+         <img src="Images/Health-Talk-Sessions.png"  alt="Health Talk Health-Talk-Sessions" width="300npx"  height="300 px">
+         
+        </div>
+
+      <div class="footer"> 
+        <h5>Contact Me</h5>
+        <address>
+           <a href="mailto:fake@email.com"><strong>Rosana Moraes</strong></a>.<br>
+           Phone:<strong>(718) 412-9983</strong><br>
+           Example.com<br>
+           1906 Cochran St, TX 77071<br>
+           USA
+           </address>
+      </div>
+ 
+    </div>
+    
+</body>
+</html>
